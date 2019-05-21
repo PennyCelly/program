@@ -1,0 +1,22 @@
+import sys
+from STUDY.ChangeColor import bcolors
+from sys import argv, path
+print(bcolors.BLACK+"将整个模块(somemodule)导入，格式为： import somemodule\n","从某个模块中导入某个函数,格式为： from somemodule import somefunction\n",
+      "从某个模块中导入多个函数,格式为： from somemodule import firstfunc, secondfunc, thirdfunc\n",
+      "将某个模块中的全部函数导入，格式为： from somemodule import *\n")
+print(bcolors.YELLOW+'====================Python import mode==================')
+print('命令行为参数为：')
+for i in sys.argv:
+    print(i)
+print('\n python路径为', sys.path)
+print('===================Python import mode==================\n\n')
+
+
+print(bcolors.GREEN+'=================导入某个模块某个函数====================')
+for i in argv:
+    print(i)
+print('path:', path)
+print('=================导入某个模块某个函数===================\n\n')
+
+
+print(sys.path)
