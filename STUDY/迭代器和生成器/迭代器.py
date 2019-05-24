@@ -6,6 +6,8 @@
 4.__next__() 方法会返回下一个迭代器对象。
 """
 # 创建一个返回数字的迭代器，初始值为 1，逐步递增 1：
+
+
 class Mynumbers:
     def __iter__(self):
         self.a = 1
@@ -23,3 +25,13 @@ print(next(myiter))
 print(next(myiter))
 print(next(myiter))
 print(next(myiter))
+
+
+"""
+迭代器对象从集合的第一个元素开始访问，直到所有的元素被访问完结束。迭代器只能往前不会后退。
+迭代器有两个基本的方法：iter() 和 next()。
+"""
+list1 = ['1', '2', 'a', 'b', 'c']
+it = iter(list1)
+for i in list1:
+    print(next(it))
