@@ -1,4 +1,4 @@
-from STUDY.ChangeColor import bcolors
+from STUDY.基础定义.ChangeColor import bcolors
 """
 Python有五个标准的数据类型：
 Numbers（数字）
